@@ -18,6 +18,8 @@ export default class MyExtension extends BaseExtension {
   }
 
   onSettingUpdate<T>(key: string, value: T): void {
+    if (!value) return;
+
     switch (key) {
       case Settings.API_KEY:
         console.log("API key updated:", value);
