@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "paths": {
+            "@janhq/core": ["./node_modules/janhq/core/src"],
+            "@janhq/core/*": ["./node_modules/janhq/core/src/*"],
+            "@resources/*": ["./resources/*"]
+        },
+        "target": "esnext",
+        "moduleResolution": "Bundler",
+        "allowImportingTsExtensions": true,
+        "noEmit": true
+    }
+}
